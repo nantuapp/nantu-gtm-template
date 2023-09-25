@@ -10,8 +10,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-homepage: "https://www.nantu.app/"
+homepage: "https://github.com/nantuapp/"
 documentation: "https://github.com/nantuapp/nantu-gtm-template/wiki"
 versions:
-  - sha: 
-    changeNotes: Initial Version
+  - sha: 184f9a3ef8f318b47ea80ef7956359e00f9fa268 
+    changeNotes: Initial Release
