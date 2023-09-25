@@ -32,5 +32,5 @@ To address potential browser cookie limitations, Nantu employs localStorage to s
 
 ### Implementation Guide
 
-For detailed instructions on how to implement your first AB Test using Nantu, refer to the [Quick Start](https://github.com/nantuapp/nantu-gtm-template/wiki/Quick-Start) document. This guide offers step-by-step instructions, code examples to ensure a smooth integration process.
+For detailed instructions on how to implement your first AB Test using Nantu, refer to the [Quick Start](https://github.com/nantuapp/nantu-gtm-template/wiki/) document. This guide offers step-by-step instructions, code examples to ensure a smooth integration process.
 
