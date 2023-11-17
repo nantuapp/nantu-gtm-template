@@ -14,7 +14,9 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Nantu A/B Test",
-  "categories": ["EXPERIMENTATION"],
+  "categories": [
+    "EXPERIMENTATION"
+  ],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -52,6 +54,13 @@ ___TEMPLATE_PARAMETERS___
         "type": "REGEX",
         "args": [
           "^[a-zA-Z0-9\\s-]*$"
+        ]
+      },
+      {
+        "type": "STRING_LENGTH",
+        "args": [
+          3,
+          20
         ]
       }
     ]
@@ -193,6 +202,13 @@ ___TEMPLATE_PARAMETERS___
               "args": [
                 "^[a-zA-Z0-9\\s-]*$"
               ]
+            },
+            {
+              "type": "STRING_LENGTH",
+              "args": [
+                2,
+                12
+              ]
             }
           ]
         },
@@ -233,7 +249,10 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 // Author: Juan Castro
 // Last modified: 2023-08-02
 // License: Apache 2.0
-// Version: 1.0.0
+// Version: 1.0.1
+
+// What's new:
+// Experiment Name and Variation Name character limit
 
 // API imports
 const Math = require('Math');
@@ -248,7 +267,6 @@ const createQueue = require('createQueue');
 const getType = require('getType');
 const getTimestampMillis = require('getTimestampMillis');
 const decode = require('decodeUriComponent');
-const isConsentGranted = require('isConsentGranted');
 
 
 // Constants
@@ -1043,121 +1061,6 @@ ___WEB_PERMISSIONS___
                   {
                     "type": 8,
                     "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": false
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "access_consent",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "consentTypes",
-          "value": {
-            "type": 2,
-            "listItem": [
-              {
-                "type": 3,
-                "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "consentType"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  }
-                ],
-                "mapValue": [
-                  {
-                    "type": 1,
-                    "string": "ad_storage"
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": false
-                  }
-                ]
-              },
-              {
-                "type": 3,
-                "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "consentType"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  }
-                ],
-                "mapValue": [
-                  {
-                    "type": 1,
-                    "string": "analytics_storage"
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": false
-                  }
-                ]
-              },
-              {
-                "type": 3,
-                "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "consentType"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  }
-                ],
-                "mapValue": [
-                  {
-                    "type": 1,
-                    "string": "functionality_storage"
                   },
                   {
                     "type": 8,
