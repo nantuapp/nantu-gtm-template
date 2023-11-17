@@ -13,5 +13,5 @@
 homepage: "https://github.com/nantuapp/"
 documentation: "https://github.com/nantuapp/nantu-gtm-template/wiki"
 versions:
-  - sha: 184f9a3ef8f318b47ea80ef7956359e00f9fa268 
-    changeNotes: Initial Release
+  - sha: 2705372b33dde882b233fb47057421806e4f7292 
+    changeNotes: Limit Experiment Name and Variations Name
