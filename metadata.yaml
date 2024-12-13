@@ -10,8 +10,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-homepage: "https://github.com/nantuapp/"
-documentation: "https://github.com/nantuapp/nantu-gtm-template/wiki"
+homepage: "https://www.conversionteam.com/nantu-free-ab-testing-tool/"
+documentation: "https://www.conversionteam.com/nantu/docs/"
 versions:
   - sha: 2705372b33dde882b233fb47057421806e4f7292 
     changeNotes: Limit Experiment Name and Variations Name
